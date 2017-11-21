@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frequently Asked Questions</title>
+	<style type="text/css" media="screen">
+		dt{
+			margin-bottom: 0.5em;
+			font-size: 125%;
+		}
+		dd{
+			margin-bottom: 1em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Frequently Asked Questions</h1>
+	<dl id="faq">
+		<dt>Don't I need a developmene environment to work with JavaScript?</dt>
+		<dd>Nope. As with HTMl, all you need is a text editor and a browser that supports JavaScript...</dd>
+		<dt>WHat is AJAX?</dt>
+		<dd>one Topci we have;nt converd yepat is atnasf afdnaweoiunfa smif  sahen sdfh amnpsdn
+		dsknfe dk;apqprn  skaie m bahqpnfa an pqn fafnasfnawqpha  afqpfanmga...</dd>
+		<dt>WHant wI use javascirpt, do I neded to accommoner users whose browser may not 
+		support ajfavascirpt or who has disablet it?</dt>
+		<dd>Some estimates indicate aht over 0% foemwe busmerm hav ejavapmmce,
+		dkiemsd. hwownvme uslem youm...</dd>
+	</dl>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#faq dd").hide();
+			$("#faq dt").click(function(event){
+				event.preventDefault();
+				$(this).next("dd").toggle();
+			});
+			$("<a href='#' id='expandAll'>Expand All</a>").insertAfter("h1");
+			$("#expandAll").click(function(event){
+				event.preventDefault();
+				if($(this).html() == "Expand All"){
+					$("#faq dd").show();
+					$(this).html("Collapse All");
+				}else{
+					$("#faq dd").hide();
+					$(this).html("Expand All");
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>
