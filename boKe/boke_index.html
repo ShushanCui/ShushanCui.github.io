@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>博客-崔书山</title>
+	<style type="text/css">
+		/* 基本样式 */
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	font: 14px "宋体", Arial, Helvetica, sans-serif;
+	color: #333;
+	background: url(images/bg.png) right top no-repeat
+}
+img {
+	border: 0;
+	display: block
+}
+ul, ol, li {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+a {
+	outline: none;
+}
+/* 整个网页的样式 */
+#wrapper {
+	background: url(images/ftbg.png) bottom center no-repeat;
+	overflow: hidden;
+}
+/* header的样式 */
+header {
+	width: 100%;
+}
+/* 屋顶的样式 */
+.headtop {
+	background: url(images/topbg.png) repeat-x;
+	height: 28px;
+}
+/* 总标题的样式 */
+.contenttop {
+	width: 1000px;
+	margin: auto;
+}
+.logo {
+	padding: 50px 0 20px 20px;
+	font-size: 26px;
+	font-family: "微软雅黑", sans-serif;
+	color: #333;
+	font-weight: bold;
+}
+/* 需要浮动的样式 */
+.f_l {
+	float: left;
+}
+/* 中间空白行的样式 */
+.blank {
+	height: 8px;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	clear: both
+}
+/* 导航样式 */
+nav {
+	margin: 0 0 15px 0
+}
+.navigation {
+	height: 64px;
+	background: url(images/navbg.png) no-repeat;
+	font-family: "微软雅黑";
+}
+.menu {
+	position: relative;
+	margin-left: 70px;
+	padding-top: 10px
+}
+.menu li {
+	float: left;
+	width: 110px;
+	text-align: center;
+	position: relative;
+	line-height: 46px;
+}
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold
+}
+.menu ul {
+	position: relative;
+	background: #333;
+	z-index: 300;
+}
+.menu li ul {
+	display: none;
+	width: 110px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+.menu li ul li {
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px
+}
+.menu li ul li a {
+	font-size: 14px
+}
+.menu li ul li a:hover {
+	background: #000
+}
+/*卷轴*/
+.jztop {
+	background: url(images/jztop.png) no-repeat;
+	width: 1034px;
+	margin: auto;
+	height: 32px;
+}
+/* 内容 */
+.container {
+	background: rgba(204, 204, 204, 0.3);
+	overflow: hidden;
+	width: 1000px;
+	margin: auto;
+	border-left: #d2d2d2 1px solid;
+	border-right: #d2d2d2 1px solid;
+	border-bottom: #d2d2d2 1px solid;
+}
+
+.bloglist {
+	width: 620px;
+	overflow: hidden;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.bloglist h3 {
+	margin: 20px 0 10px 0;
+	color: #333;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+/* 底部样式 */
+footer {
+	background: url(images/footerbg.png) repeat-x;
+	padding: 20px 0;
+	color: #ccc;
+	margin: 20px 0 0 0;
+}
+.footer a {
+
+	color: #ccc;
+
+}
+.footer {
+	width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+.footer p {
+	line-height: 24px;
+}
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="headtop"></div>
+			<div class="contenttop">
+				<div class="logo f_l">我的个人博客-崔书山</div>
+				<div class="blank"></div>
+				<nav>
+					<div class="navigation">
+						<ul class="menu">
+							<li><a href="#content_keyan">科研博客</a></li>
+							<li><a href="#content_biancheng">编程博客</a></li>
+							<li><a href="#content_shenghuo">生活博客</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="jztop"></div>
+		<div class="container">
+			<div class="bloglist" id="content_keyan">
+				<h2>我的科研博客 | <a href="#">回到主页</a></h2>
+
+				<h3>我的第一个科研博客</a></h3>
+				<p>我整理了一下网友给我的来信。</p>
+
+				<h3>我的第二个科研博客</a></h3>
+				<p>我整理了二下网友给我的来信。</p>
+				
+			</div>
+
+			<div class="bloglist" id="content_biancheng">
+				<h2>我的编程博客 | <a href="#">回到主页</a></h2>
+
+				<h3>我的第一个编程博客</a></h3>
+				<p>我整理了一下网友给我的来信。</p>
+
+				<h3>我的第二个编程博客</a></h3>
+				<p>我整理了二下网友给我的来信。</p>
+				
+			</div>
+
+			<div class="bloglist" id="content_shenghuo">
+				<h2>我的生活博客 | <a href="#">回到主页</a></h2>
+
+				<h3>我的第一个生活博客</a></h3>
+				<p>我整理了一下网友给我的来信。</p>
+
+				<h3>我的第二个生活博客</a></h3>
+				<p>我整理了二下网友给我的来信。</p>
+				
+			</div>
+
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="f_l">
+					<p>百度一下：<a href="https://www.baidu.com" target="_blank">百度啊</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
