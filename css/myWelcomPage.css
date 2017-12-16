@@ -7,6 +7,9 @@ body{
 	border-width:2px;
 	border-color:#000000;
 	padding:2px;
+	color:white;
+	transition:background-color 15s;
+	background:#54c8eb;
 }
 
 h2{
