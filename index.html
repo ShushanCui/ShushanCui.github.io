@@ -3,6 +3,21 @@
 <head>
 	<title>我的初始页</title>
 	<link rel="stylesheet" type="text/css" href="css/myWelcomPage.css">
+	<script type="text/javascript">
+		(function (){
+		    function colorcycle() {
+                var colors = ['#54c8eb', '#4ea9de', '#4b97d2', '#92cc8f', '#41bb98', '#c9de83', '#dee569', 'c891c0', 
+                          '#9464a8', '#7755a1', '#f069a1', '#f05884','#e7457b', '#ffd47e', '#f69078'];
+                var color = colors[parseInt(Math.random() * (colors.length - 1), 10)];
+                document.getElementsByTagName('body')[0].style.backgroundColor = color;
+            }
+
+            setTimeout(function () {
+            colorcycle();
+            setInterval(colorcycle, 15000);
+            }, 1000);
+        }());
+	</script>
 </head>
 <body>
 	<h2>自定义的导航页</h2>
